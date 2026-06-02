@@ -1,54 +1,51 @@
-# NFA Emulator
-
-## Description
-
-This project implements a Non-Deterministic Finite Automaton emulator in Python.
-The automaton configuration is loaded from external configuration files, while the program simulates the execution of the NFA and determines whether a given input word is accepted or rejected.
-In this example, the NFA recognizes all words over the alphabet "{0, 1}" that have an even number of 0.
+## Description 
+This project implements a Deterministic Finite Automaton emulator in Python. 
+The automaton configuration is loaded from external configuration files, while the program simulates the execution of the DFA and determines whether a given input word is accepted or rejected. 
+In this example, the DFA recognizes all words over the alphabet "{a, b}" that end with the sequence "ab". 
 ## Project Structure
 ```
-nfa/
+dfa/
 │
 ├── config.cfg
-├── nfa.cfg
+├── dfa1.cfg
 ├── emulator.py
 └── executabil.py
 ```
-### config.cfg
-Contains the name of the NFA configuration file that will be loaded by the program.
-### nfa.cfg
-Contains the NFA structure, by definition:
+### config.cfg 
+Contains the name of the DFA configuration file that will be loaded by the program. 
+### dfa1.cfg 
+Contains the DFA structure, by definition: 
 - Alphabet (Sigma)
 - States
 - Start state
 - Final states
 - Transitions
-### emulator.py
-Contains 4 functions which :
+### emulator.py 
+Contains 4 functions which : 
 - read the configuration files
-- parse NFA sections
-- build the nfa
+- parse DFA sections
+- build the dfa 
 - verify input words from the user
-### executabil.py
-Main program file, which:
+### executabil.py 
+Main program file, which: 
 - reads the configuration file
-- loads the NFA
+- loads the DFA
 - receives input words from the user
 - displays a message on whether the word is accepted or rejected
-## Recognized Language
-L = { w ∈ {0,1}* | w contains an even number of 0 symbols }
-## How the NFA Works
-The automaton contains two states:
-- q_even: initial and final state, representing an even number of 0 read so far
-- q_odd: representing an odd number of 0 read so far
-Reading 0 switches between the two states. Reading 1 keeps the automaton in the same state.
+## Recognized Language 
+L = { w ∈ {a,b}* | w ends with "ab" } 
+## How the DFA Works 
+The automaton contains three states: 
+- q0: initial state
+- q1: the last character as 'a'
+- q2: the sequence 'ab' was just read (final state)
 ## Running the Program
 ```
 Run:
 python executabil.py
-Type your word: 00
+Type your word: ab
 ACCEPTED
-Type your word: 110
+Type your word: aba
 REJECTED
 Type your word: Exit
 The command `Exit` terminates the program.
