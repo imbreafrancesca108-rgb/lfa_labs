@@ -42,6 +42,7 @@ The automaton contains 3 states:
 - q0: initial state
 - q1: one 0 has been introduced
 - q2 : the substring 00 has been found / final state
+  
 From q0, on input 0, the automata can move to two different states: back to q0 or to q1.
 ## Running the Program
 ```
