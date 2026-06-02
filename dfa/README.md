@@ -6,12 +6,14 @@ This project implements a Deterministic Finite Automaton emulator in Python.
 The automaton configuration is loaded from external configuration files, while the program simulates the execution of the DFA and determines whether a given input word is accepted or rejected.
 In this example, the DFA recognizes all words over the alphabet "{a, b}" that end with the sequence "ab".
 ## Project Structure
+```
 dfa/
 │
 ├── config.cfg
 ├── dfa1.cfg
 ├── emulator.py
 └── executabil.py
+```
 ### config.cfg
 Contains the name of the DFA configuration file that will be loaded by the program.
 ### dfa1.cfg
