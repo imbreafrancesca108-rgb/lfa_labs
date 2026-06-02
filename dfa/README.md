@@ -1,3 +1,4 @@
+# DFA Emulator
 ## Description 
 This project implements a Deterministic Finite Automaton emulator in Python. 
 The automaton configuration is loaded from external configuration files, while the program simulates the execution of the DFA and determines whether a given input word is accepted or rejected. 
