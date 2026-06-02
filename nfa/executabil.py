@@ -1,4 +1,4 @@
-# this automata accepts all words that have an even number of '0'
+# this automata accepts all words that contain the substring '00'
 from emulator import load_config, build_nfa, verify_word
 config_file=load_config("config.cfg")[0]
 nfa_config=load_config(config_file)
