@@ -1,4 +1,4 @@
-# this automata accepts all words that have a substring of 0, followed by a substring of 1, both of the same length
+# this automata accepts all words that have a subsequence of 0, followed by a subsequence of 1, both of the same length
 # 0^n1^n
 from emulator import load_config, build_pda, verify_word
 config_file=load_config("config.cfg")[0]
