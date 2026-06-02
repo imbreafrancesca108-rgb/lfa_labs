@@ -44,7 +44,7 @@ The automaton contains three states:
 - q1: the last character as 'a'
 - q2: the sequence 'ab' was just read (final state)
 ## Running the Program
-
+```
 Run:
 python executabil.py
 Type your word: ab
@@ -53,3 +53,4 @@ Type your word: aba
 REJECTED
 Type your word: Exit
 The command `Exit` terminates the program.
+```
