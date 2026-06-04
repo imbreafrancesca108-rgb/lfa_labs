@@ -44,6 +44,9 @@ Example of derivation:
 S
 => 0S1
 => 00S11
+=> 000S111
+=> 000e111
+=> 000111
 
 ## Running the Program
 ```
