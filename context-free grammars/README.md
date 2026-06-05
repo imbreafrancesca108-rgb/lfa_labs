@@ -20,7 +20,7 @@ Contains the grammar definition:
 - terminals
 - start symbol
 - production rules
-- 
+  
 ### emulator.py 
 Contains 4 functions which : 
 - read the configuration files
