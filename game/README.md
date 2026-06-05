@@ -46,23 +46,48 @@ Main program file, which:
 - Gate
 - Heaven
 - Hell
-## How the PDA Works 
-The automaton uses a stack to compare the number of 0s and the number of 1s.
+## How the Game Works 
+When a player reaches the Library, a key is added to the stack.
 
-The automaton contains three states: 
-- q0: initial state that reads 0s and pushes X on the stack for each 0 read
-- q1: reads 1s and pops one X for each 1 read
-- qf: final state that is reached after the whole input is consumed and only the initial stack symbol remains
+Stack: [key]
+
+When a player reaches the Lab, a potion is added to the stack.
+
+Stack: [key,potion]
+
+The gate is the decision point:
+- if the player has the potion -> Heaven
+- if the player does not have the potion -> Hell
+  
 ## Running the Program
 ```
-Run:
-python executabil.py
-Type your word: 01
-ACCEPTED
-Type your word: 000111
-ACCEPTED
-Type your word: 001
-REJECTED
-Type your word: Exit
-The command `Exit` terminates the program.
+Example:
+
+You are in: START
+
+Coordinate: N
+You are in: Library
+You found the key!
+
+Coordinate: S
+You are in: START
+
+Coordinate: W
+You are in: Lab
+You found the potion!
+
+Coordinate: N
+You are in: Workshop
+
+Coordinate: N
+You are in: Garden
+
+Coordinate: W
+You are in heaven. You won!
+
+To stop the game:
+
+Coordinate: Exit
+
+The command Exit terminates the game.
 ```
