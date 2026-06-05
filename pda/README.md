@@ -14,7 +14,7 @@ pda/
 ```
 ### config.cfg 
 Contains the name of the PDA configuration file that will be loaded by the program. 
-### dfa1.cfg 
+### pda.cfg 
 Contains the PDA structure, by definition: 
 - Alphabet (Sigma)
 - Stack symbols
