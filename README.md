@@ -1,6 +1,7 @@
 # Lab work - Theory of Computation Course
 
-### Six implemented projects
+### Six implemented projects in Python
+
 - DFA
 - NFA
 - PDA
